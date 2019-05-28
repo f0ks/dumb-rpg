@@ -1,33 +1,41 @@
 .map-box {
-  overflow: hidden;
-  position:relative;
+    overflow: hidden;
+    position: relative;
 }
 
 .line {
-  float:left;
-  clear:both;
-  
-  overflow:hidden;
-  /*margin-bottom: 40px;*/
+    float: left;
+    clear: both;
+
+    overflow: hidden;
+    /*margin-bottom: 40px;*/
 }
 
-.line>div {
-  width:32px;
-  height:32px;
-  float:left;
-  /*border:1px solid yellow;*/
+.line > div {
+    width: 32px;
+    height: 32px;
+    float: left;
+    /*border:1px solid yellow;*/
 }
 
 .map-box .p {
-  float:none;
-  position:absolute;
-  width:32px;
-  height:32px;
-  background:url("p.png");
-  top:0;
-  bottom:0;
+    float: none;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("p.png");
+    top: 0;
+    bottom: 0;
 }
 
-.g {background:url("g.png");}
-.w {background:url("w.png");}
-.t {background:url("t.png"), url("g.png");}
+.g {
+    background: url("g.png");
+}
+
+.w {
+    background: url("w.png");
+}
+
+.t {
+    background: url("t.png"), url("g.png");
+}

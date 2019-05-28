@@ -12,8 +12,6 @@ const mapBox = document.getElementById('map-box');
 const cellSize = 32;
 
 function drawMap(world) {
-
-
   world.forEach((line) => {
     const lineNode = document.createElement('div');
     lineNode.className = 'line';
@@ -22,7 +20,7 @@ function drawMap(world) {
       const lines = document.querySelectorAll('.line');
       const objNode = document.createElement('div');
       objNode.className = obj;
-      lines[lines.length - 1].appendChild(objNode)
+      lines[lines.length - 1].appendChild(objNode);
     });
   });
 }
