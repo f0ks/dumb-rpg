@@ -7,9 +7,14 @@ const world = [
   ['g', 'g', 'g', 'g', 'w', 'w', 'g',],
   ['g', 'g', 'g', 'g', 'g', 'g', 'g',],
 ];
-const player = document.getElementById('player');
-const mapBox = document.getElementById('map-box');
+let player;
+let mapBox;
 const cellSize = 32;
+
+function onLoad() {
+  player = document.getElementById('player');
+  mapBox = document.getElementById('map-box');
+}
 
 function drawMap(world) {
   world.forEach((line) => {
@@ -32,8 +37,8 @@ function setPlayerPosition(p, x, y, cellSize) {
 }
 
 
-window.addEventListener('load',
-  function () {
-    drawMap(world);
-    setPlayerPosition(player, 2, 1, cellSize);
-  });
+window.addEventListener('load', function () {
+  onLoad();
+  drawMap(world);
+  setPlayerPosition(player, 2, 1, cellSize);
+});
